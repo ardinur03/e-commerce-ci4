@@ -1,5 +1,5 @@
-<?= $this->extend('layout/app') ?>
+<?= $this->extend('layouts/app') ?>
 
 <?= $this->section('content') ?>
-    <?= $this->include('components/front-end/navbar') ?>
+    <?= $this->include('components/navbar') ?>
 <?= $this->endSection() ?>
