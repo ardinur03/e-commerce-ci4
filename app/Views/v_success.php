@@ -2,6 +2,6 @@
 
 <?= $this->section('content') ?>
     <?= $this->include('components/navbar') ?>
-    <?= $this->include('components/product') ?>
+    <?= $this->include('components/success') ?>
 
 <?= $this->endSection() ?>

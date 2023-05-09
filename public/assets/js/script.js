@@ -8,7 +8,7 @@ add_to_cart.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     e.preventDefault();
     const form = this.parentElement.parentElement.parentElement.parentElement;
-    const id_barang = form.querySelector("input[name=id_barang]").value;
+    const idkemeja = form.querySelector("input[name=idkemeja]").value;
     Swal.fire({
       title: "Apakah anda yakin?",
       text: "Anda akan menambahkan produk ini kedalam keranjang!",

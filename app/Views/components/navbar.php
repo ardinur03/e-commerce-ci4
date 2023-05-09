@@ -7,9 +7,19 @@
             <ul class="navbar-nav me-auto">
                 <li class="nav-item"><a class="nav-link active" href="/">products</a></li>
             </ul>
-            <a class="btn btn-primary" role="button" href="#">
+            <a class="btn btn-primary" role="button" href="<?= base_url('cart') ?>">
                 <i class="fas fa-shopping-cart"></i>
+                <?php
+                $products_count = 0;
+                if (session()->has('cart')) {
+                    $products_count = count(session()->get('cart'));
+                } else {
+                    $products_count = 0;
+                }
+                ?>
+                <?= $products_count ?>
             </a>
+            <a href="<?= base_url('login') ?>" role="button" class="btn btn-link">Login</a>
         </div>
     </div>
 </nav>
